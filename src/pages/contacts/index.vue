@@ -31,6 +31,9 @@
         </div>
         <div class="modal" v-if="isModal">
             <div class="modal__content">
+                <div class="modal__arrow-wrapper">
+                    <div class="modal__arrow" @click="isModal=false"></div>
+                </div>
                 <p>Измените имя</p>
                 <input 
                     type="text" 
@@ -48,6 +51,9 @@
         </div>
         <div class="modal" v-if="isAddModal">
             <div class="modal__content">
+                <div class="modal__arrow-wrapper">
+                    <div class="modal__arrow" @click="isAddModal=false"></div>
+                </div>
                 <p>Введите имя</p>
                 <input
                     type="text" 

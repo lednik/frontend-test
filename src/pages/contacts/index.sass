@@ -58,6 +58,7 @@
     background: rgba(34, 34, 34, 0.6)
     backdrop-filter: blur(15px)
     &__content
+        position: relative
         padding: 40px
         background: #EDEFFF
         border-radius: 16px
@@ -75,4 +76,35 @@
         &:hover
             transform: translateY(2px)
             background: #3eaf7c
+    &__arrow
+        position: relative
+        width: 16px
+        height: 16px
+        cursor: pointer
+        transition: .3s
+        &-wrapper
+            position: absolute
+            top: 24px
+            right: 24px
+        &:hover
+            transform: rotate(90deg)
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 18px
+            height: 1px
+            background-color: #42b983
+            top: 50%
+            right: 0px
+            transform: translateY(-50%) rotate(45deg)
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: 0px
+            transform: translateY(-50%) rotate(-45deg)
+            width: 18px
+            height: 1px
+            background-color: #42b983
 
