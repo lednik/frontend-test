@@ -1,0 +1,78 @@
+.contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+        font-size: 88px
+        line-height: 120px
+        margin-bottom: 40px
+        color: #42b983
+    &__label
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        margin-bottom: 8px
+    &__input
+        width: 384px
+        background: #E1E2F5
+        border-radius: 12px
+        border: none
+        padding: 16px 24px
+        outline: none
+        -webkit-appearance: none
+        margin-bottom: 32px
+        transition: .3s
+        box-sizing: border-box
+        &_error
+            border: 2px solid #f24949
+    &__list
+        display: flex
+        flex-direction: column
+    &__message
+        text-align: center
+        font-size: 48px
+        max-width: 500px
+    &__list
+        display: flex
+        flex-direction: column
+    &__item
+        font-size: 24px
+        line-height: 140%
+        // max-width: 500px
+        margin-right: 16px
+    &__editBtn
+        color: #42b983
+        cursor: pointer
+    &__delete
+        color: darkred
+        cursor: pointer
+.modal
+    width: 100vw
+    height: 100vh
+    position: fixed
+    left: 0
+    top: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(34, 34, 34, 0.6)
+    backdrop-filter: blur(15px)
+    &__content
+        padding: 40px
+        background: #EDEFFF
+        border-radius: 16px
+    &__btn
+        margin-top: 20px
+        width: fit-content
+        padding: 8px 44px
+        background: #42b983
+        color: white
+        cursor: pointer
+        border-radius: 12px
+        text-decoration: none
+        margin-right: 24px
+        transition: .3s
+        &:hover
+            transform: translateY(2px)
+            background: #3eaf7c
+
